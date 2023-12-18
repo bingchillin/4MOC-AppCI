@@ -1,0 +1,19 @@
+version: 2.1
+
+orbs:
+  android: circleci/android@1.0.3
+
+jobs:
+  build-and-upload:
+    executor:
+      name: android/android-machine
+    environment:
+      release_notes: "Release notes for this build"
+      notify: true
+    steps:
+      - checkout
+      - run:
+          name: Install OpenJDK 17
+          command: ./gradlew assembleDebug
+
+workflows:
