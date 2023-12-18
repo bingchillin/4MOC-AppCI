@@ -21,4 +21,9 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.appci", appContext.packageName)
     }
+    // function for basic test
+    @Test
+    fun testAddition() {
+        assertEquals(4, 2 + 2)
+    }
 }
