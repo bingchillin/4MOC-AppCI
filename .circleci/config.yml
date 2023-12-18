@@ -20,7 +20,7 @@ jobs:
             sudo update-alternatives --set javac /usr/lib/jvm/java-17-openjdk-amd64/bin/javac
             java -version
       - run:
-          name: Install OpenJDK 17
+          name: Assemble debug build
           command: ./gradlew assembleDebug
 
 workflows:
