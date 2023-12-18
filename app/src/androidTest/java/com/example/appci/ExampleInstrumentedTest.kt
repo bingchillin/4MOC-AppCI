@@ -24,6 +24,6 @@ class ExampleInstrumentedTest {
     // function for basic test
     @Test
     fun testAddition() {
-        assertEquals(4, 2 + 2)
+        assertEquals(5, 2 + 2)
     }
 }
